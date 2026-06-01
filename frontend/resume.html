@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder - UrbanNest</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span>UN</span>UrbanNest</a>
+    <nav>
+      <a href="/student.html">Student</a>
+      <a href="/explore.html">Explore</a>
+      <a href="/auth.html">Login</a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    <section class="section split page-top">
+      <form class="tool-panel" id="resumeForm">
+        <p class="eyebrow">Resume builder</p>
+        <h2>Live resume preview</h2>
+        <input name="name" placeholder="Full name" value="Aarav Sharma">
+        <textarea name="summary" placeholder="Profile summary">B.Com student seeking part-time customer-facing roles near Koramangala.</textarea>
+        <input name="skills" placeholder="Skills" value="Communication, Excel, Social media, Canva">
+        <textarea name="projects" placeholder="Projects">Built a college fest sponsorship tracker and managed vendor outreach.</textarea>
+        <button class="primary" type="submit">Update Preview</button>
+      </form>
+      <article class="resume-preview" id="resumePreview"></article>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

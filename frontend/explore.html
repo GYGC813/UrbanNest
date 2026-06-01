@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore - UrbanNest</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span>UN</span>UrbanNest</a>
+    <nav>
+      <a href="/auth.html">Login</a>
+      <a href="/student.html">Student</a>
+      <a href="/owner.html">PG Owner</a>
+      <a href="/recruiter.html">Recruiter</a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    <section class="section page-top">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Live marketplace</p>
+          <h2>PGs and jobs update from the Java backend.</h2>
+        </div>
+        <div class="filters">
+          <select id="cityFilter" aria-label="City filter">
+            <option value="">All cities</option>
+            <option>Bengaluru</option>
+            <option>Pune</option>
+          </select>
+          <select id="typeFilter" aria-label="Listing type">
+            <option value="">PGs + Jobs</option>
+            <option value="pg">PGs</option>
+            <option value="job">Jobs</option>
+          </select>
+        </div>
+      </div>
+      <div class="searchbar light-search" role="search">
+        <input id="searchInput" type="search" placeholder="Search city, area, job, amenity">
+        <button id="nearMeBtn">Near Me</button>
+      </div>
+      <div class="cards" id="listingGrid"></div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

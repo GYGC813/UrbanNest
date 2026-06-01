@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - UrbanNest</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span>UN</span>UrbanNest</a>
+    <nav>
+      <a href="/explore.html">Explore</a>
+      <a href="/resume.html">Resume</a>
+      <a href="/owner.html">PG Owner</a>
+      <a href="/recruiter.html">Recruiter</a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    <section class="section page-top">
+      <div class="dashboard-hero">
+        <div class="dashboard-title">
+          <p class="eyebrow">Student workspace</p>
+          <h2>Student Dashboard</h2>
+          <p>Apply to PGs and jobs, save recommendations, and track referral rewards.</p>
+        </div>
+        <article class="dash-card"><h3>Signed In</h3><p id="userBadge" class="muted">Loading</p><button class="secondary" id="logoutBtn">Logout</button></article>
+      </div>
+      <div id="studentDashboard" class="dashboard-main"></div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

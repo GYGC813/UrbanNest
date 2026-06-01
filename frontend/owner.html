@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG Owner Dashboard - UrbanNest</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span>UN</span>UrbanNest</a>
+    <nav>
+      <a href="/explore.html">Explore</a>
+      <a href="/student.html">Student</a>
+      <a href="/recruiter.html">Recruiter</a>
+      <a href="/admin.html">Admin</a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    <section class="section page-top">
+      <div class="dashboard-hero">
+        <div class="dashboard-title">
+          <p class="eyebrow">PG owner workspace</p>
+          <h2>Add real PG listings</h2>
+          <p>New PGs are saved by the backend and appear on student/explore pages automatically.</p>
+        </div>
+        <article class="dash-card"><h3>Signed In</h3><p id="userBadge" class="muted">Loading</p><button class="secondary" id="logoutBtn">Logout</button></article>
+      </div>
+      <div class="dashboard-grid">
+        <article class="dash-card">
+          <h3>Add PG</h3>
+          <form id="pgForm" data-create="pgs" class="form-grid">
+            <input name="name" placeholder="PG Name" required>
+            <input name="rent" placeholder="Rent" required>
+            <input name="city" placeholder="City" required>
+            <input name="area" placeholder="Area" required>
+            <input name="gender" placeholder="Gender Type">
+            <input name="amenities" placeholder="Amenities">
+            <input name="lat" placeholder="Map latitude">
+            <input name="lng" placeholder="Map longitude">
+            <input name="image" placeholder="Image URL">
+            <button class="primary" type="submit">Save PG Live</button>
+          </form>
+        </article>
+        <article class="dash-card"><h3>Statistics</h3><div id="ownerStats"></div></article>
+      </div>
+      <section class="section nested-section">
+        <div class="section-head"><div><p class="eyebrow">My PGs</p><h2>Live PG listings</h2></div></div>
+        <div class="cards" id="ownerListings"></div>
+      </section>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

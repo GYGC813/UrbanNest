@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruiter Dashboard - UrbanNest</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span>UN</span>UrbanNest</a>
+    <nav>
+      <a href="/explore.html">Explore</a>
+      <a href="/student.html">Student</a>
+      <a href="/owner.html">PG Owner</a>
+      <a href="/admin.html">Admin</a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    <section class="section page-top">
+      <div class="dashboard-hero">
+        <div class="dashboard-title">
+          <p class="eyebrow">Recruiter workspace</p>
+          <h2>Add real part-time jobs</h2>
+          <p>New jobs are saved by the backend and appear for students automatically.</p>
+        </div>
+        <article class="dash-card"><h3>Signed In</h3><p id="userBadge" class="muted">Loading</p><button class="secondary" id="logoutBtn">Logout</button></article>
+      </div>
+      <div class="dashboard-grid">
+        <article class="dash-card">
+          <h3>Add Job</h3>
+          <form id="jobForm" data-create="jobs" class="form-grid">
+            <input name="title" placeholder="Job Title" required>
+            <input name="company" placeholder="Company Name" required>
+            <input name="salary" placeholder="Salary" required>
+            <input name="type" placeholder="Job Type" value="Part-Time">
+            <input name="hours" placeholder="Working Hours">
+            <input name="location" placeholder="Location">
+            <input name="category" placeholder="Category">
+            <input name="distance" placeholder="Distance">
+            <input name="logo" placeholder="Logo URL">
+            <button class="primary" type="submit">Save Job Live</button>
+          </form>
+        </article>
+        <article class="dash-card"><h3>Statistics</h3><div id="recruiterStats"></div></article>
+      </div>
+      <section class="section nested-section">
+        <div class="section-head"><div><p class="eyebrow">My Jobs</p><h2>Live job listings</h2></div></div>
+        <div class="cards" id="recruiterListings"></div>
+      </section>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

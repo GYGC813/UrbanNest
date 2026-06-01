@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - UrbanNest</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span>UN</span>UrbanNest</a>
+    <nav>
+      <a href="/explore.html">Explore</a>
+      <a href="/student.html">Student</a>
+      <a href="/owner.html">PG Owner</a>
+      <a href="/recruiter.html">Recruiter</a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main>
+    <section class="section split page-top">
+      <div>
+        <p class="eyebrow">Role based access</p>
+        <h2>Register once, then open the correct dashboard.</h2>
+        <p class="muted">Students, PG owners, recruiters, and admins each land on a separate page after login.</p>
+      </div>
+      <form class="auth-panel" id="authForm">
+        <div class="tabs" id="roleTabs">
+          <button type="button" data-role="student" class="active">Student</button>
+          <button type="button" data-role="owner">PG Owner</button>
+          <button type="button" data-role="recruiter">Recruiter</button>
+          <button type="button" data-role="admin">Admin</button>
+        </div>
+        <div class="form-grid" id="authFields"></div>
+        <div class="form-actions">
+          <button class="primary" type="submit">Register / Login</button>
+          <button class="secondary" type="button" id="demoLogin">Demo Login</button>
+        </div>
+        <p class="form-note" id="authMessage">Demo password: demo123</p>
+      </form>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanNest</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span>UN</span>UrbanNest</a>
+    <nav>
+      <a href="/explore.html">Explore</a>
+      <a href="/auth.html">Login</a>
+      <a href="/student.html">Student</a>
+      <a href="/owner.html">PG Owner</a>
+      <a href="/recruiter.html">Recruiter</a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Live smart. Earn nearby.</p>
+        <h1>UrbanNest</h1>
+        <p>Students find PGs and part-time jobs while PG owners and recruiters add real listings from their own dashboards.</p>
+        <div class="hero-actions">
+          <a class="primary" href="/auth.html">Register / Login</a>
+          <a class="secondary" href="/explore.html">Explore Live Listings</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band stats" id="stats"></section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Separate pages</p>
+          <h2>Not a single-page demo anymore.</h2>
+        </div>
+      </div>
+      <div class="dashboard-grid">
+        <article class="dash-card">
+          <h3>Student Dashboard</h3>
+          <p class="muted">Private page for nearby PGs, jobs, applications, resume, and referrals.</p>
+          <a class="primary" href="/student.html">Open Student</a>
+        </article>
+        <article class="dash-card">
+          <h3>PG Owner Dashboard</h3>
+          <p class="muted">Dedicated page to add real PG listings and watch applications.</p>
+          <a class="primary" href="/owner.html">Open Owner</a>
+        </article>
+        <article class="dash-card">
+          <h3>Recruiter Dashboard</h3>
+          <p class="muted">Dedicated page to post jobs and track applicants.</p>
+          <a class="primary" href="/recruiter.html">Open Recruiter</a>
+        </article>
+        <article class="dash-card">
+          <h3>Admin Dashboard</h3>
+          <p class="muted">Moderation and analytics page for the platform owner.</p>
+          <a class="primary" href="/admin.html">Open Admin</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Live activity</p>
+          <h2>Updates from the backend</h2>
+        </div>
+      </div>
+      <div class="activity" id="activity"></div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>UrbanNest</strong>
+    <span>Java backend, separate frontend pages, persistent server data, live polling.</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

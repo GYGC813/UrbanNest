@@ -67,3 +67,28 @@ The project includes a `Dockerfile` and `render.yaml` so it can be deployed as o
 4. Share the Render URL on LinkedIn.
 
 For a real production app with many users, replace the local server data file with PostgreSQL, Supabase, Neon, or another cloud database.
+
+
+# UrbanNest
+
+UrbanNest is a full-stack web application that helps students find PG accommodations and nearby part-time jobs.
+
+## Features
+- Student Dashboard
+- PG Owner Dashboard
+- Recruiter Dashboard
+- Admin Dashboard
+- PG Listing Management
+- Job Posting System
+- Responsive UI
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- Java Backend
+- Docker
+- Render
+
+## Live Demo
+https://urbannest-ryhq.onrender.com
